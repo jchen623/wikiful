@@ -1,0 +1,11 @@
+<h1><%= @category.name %> Articles</h1>
+<h3>There are <%= @category.articles.count %> articles filed under <%= @category.name %></h3>
+<ul>
+	<% @category.articles.order(:created_at).each do |article| %>
+		<div>
+			<h3><%= link_to article.title, article %></h3>
+				<p>Created on: <%= article.created_at.strftime('%b %d, %Y') %></p>
+		</div>
+	<% end %>
+</ul>
+
