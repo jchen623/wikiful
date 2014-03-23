@@ -6,7 +6,11 @@ Wikiful::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  # Add articles resource
   resources :articles
+
+  # Add categories resource
+  resources :categories
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
