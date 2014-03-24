@@ -12,6 +12,9 @@ Wikiful::Application.routes.draw do
   # Add categories resource
   resources :categories
 
+  # Add recent_articles resource
+  resources :recent_articles
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
