@@ -17,6 +17,9 @@ Wikiful::Application.routes.draw do
   # Add recent_articles resource
   resources :recent_articles
 
+  # Add users resource
+  resources :users
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
